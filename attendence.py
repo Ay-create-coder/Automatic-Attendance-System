@@ -45,7 +45,7 @@ print('All Encodings Complete!!!')
 # webcam outside or internal camera
 
 cap = cv2.VideoCapture(2)
-
+# change above line to cap = cv2.VideoCapture(1) to use internal camera
 while True:
     ret, frame = cap.read()
     faces = cv2.resize(frame, (0, 0), None, 0.25, 0.25)
